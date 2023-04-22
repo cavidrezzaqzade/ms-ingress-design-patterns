@@ -1,7 +1,7 @@
 package creational.singleton;
 
 /**
- * @author caci
+ * <h3>@author caci<h3/>
  * Static block initialization implementation is similar to eager initialization,
  * except that instance of the class is created in the static block that provides the option for exception handling.
  */
