@@ -1,4 +1,5 @@
   # Singleton is a creational design pattern that lets you ensure that a class has only one instance, while providing a global access point to this instance.
+  # For more please read this article-> https://www.digitalocean.com/community/tutorials/java-singleton-design-pattern-best-practices-examples  
   # The Singleton pattern solves two problems at the same time, violating the Single Responsibility Principle:
 ### 1. Ensure that a class has just a single instance.
 ### 2. Provide a global access point to that instance.
@@ -15,5 +16,3 @@
 ### - Violates the Single Responsibility Principle. The pattern solves two problems at the time.
 ### - The pattern requires special treatment in a multithreaded environment so that multiple threads won’t create a singleton object several times.
 ### - It may be difficult to unit test the client code of the Singleton because many test frameworks rely on inheritance when producing mock objects. Since the constructor of the singleton class is private and overriding static methods is impossible in most languages, you will need to think of a creative way to mock the singleton. Or just don’t write the tests. Or don’t use the Singleton pattern.
-  
-  # For more please read this article-> https://www.digitalocean.com/community/tutorials/java-singleton-design-pattern-best-practices-examples
