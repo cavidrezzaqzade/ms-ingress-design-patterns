@@ -1,7 +1,7 @@
 package creational.singleton;
 
 /**
- * @author caci
+ * <h3>@author caci<h3/>
  * In eager initialization, the instance of the singleton class is created at the time of class loading.
  */
 public class EagerInitializationSingleton {
