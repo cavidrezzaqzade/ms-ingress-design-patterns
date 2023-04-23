@@ -5,16 +5,20 @@ package creational.factory;
  */
 
 public class Main {
+
+    // factory method
+    public static VehicleFactory createVehicleFactory(VehicleType vehicleType){
+        return switch (vehicleType) {
+            case CAR -> new CarFactory();
+            case MOTORCYCLE -> new MotorcycleFactory();
+        };
+    }
+
     public static void main(String[] args) {
-        VehicleFactory carFactory = new CarFactory();
-        VehicleFactory motorcycleFactory = new MotorcycleFactory();
+        VehicleFactory vehicleFactory = createVehicleFactory(VehicleType.CAR);
 
         // Create a Car object
-        Vehicle car = carFactory.createVehicle();
+        Vehicle car = vehicleFactory.createVehicle();
         car.drive(); // Output: Driving a car.
-
-        // Create a Motorcycle object
-        Vehicle motorcycle = motorcycleFactory.createVehicle();
-        motorcycle.drive(); // Output: Riding a motorcycle.
     }
 }
