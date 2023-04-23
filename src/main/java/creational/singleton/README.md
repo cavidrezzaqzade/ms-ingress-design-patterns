@@ -1,3 +1,4 @@
+![image.png](../../../resources/static/images/singleton.png)
   # Singleton is a creational design pattern that lets you ensure that a class has only one instance, while providing a global access point to this instance.
   # For more please read this article-> https://www.digitalocean.com/community/tutorials/java-singleton-design-pattern-best-practices-examples  
   # The Singleton pattern solves two problems at the same time, violating the Single Responsibility Principle:
